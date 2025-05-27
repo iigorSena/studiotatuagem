@@ -1,0 +1,148 @@
+/* Paleta: preto, cinza, branco e dourado */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: gold;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #444;
+  border-bottom: 2px solid gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nome-studio {
+  font-size: 24px;
+  font-weight: bold;
+  color: gold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: left;
+}
+
+h2 {
+  color: #d4af37;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 25pt;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #444;
+  border-radius: 10px;
+}
+
+.depoimento {
+  background: #222;
+  padding: 1rem;
+  border-left: 5px solid #d4af37;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.depoimento:hover {
+  transform: scale(1.01);
+}
+
+#orcamento {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: gold;
+  color: #000;
+  padding: 12px 25px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #e6c200;
+}
+
+#contato p {
+  margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-area {
+    margin-bottom: 15px;
+  }
+
+  section {
+  padding-top: 20px;
+  text-align: left;
+  }
+
+  .btn-whatsapp {
+    width: 50%;
+    text-align: center;
+  }
+} 
